@@ -44,6 +44,7 @@
 
     -Fuente Logo: Digital Numbers
     -Cuerpo y botones: Roboto
+    -Pantalla de carga Comfortaa
 
 ## Version
 
@@ -51,11 +52,11 @@
 
 ## Prerequesitos
 
-    - Java 1.8 o Superior
+    - Java 1.8 o Superior.
 
 ## Patron de Diseño
 
-    Patron Modelo Vista Presentador
+    Patron: Modelo Vista Presentador (MVP).
 
 ## Modo de uso
 
@@ -65,6 +66,6 @@
 
     David Aguilar Castillo
     Codigo: 202310421
+
     Oscar Alejandro Roa Doncel
     Codigo: 202311225
-"# Test" 
