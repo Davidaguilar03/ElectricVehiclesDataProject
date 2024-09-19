@@ -16,6 +16,6 @@ public class Main {
         view.setPresenter(presenter);
         presenter.setModel(model);
         presenter.setView(view);
-        view.begin();
+        view.getVehicleManagerLoadingView().begin();
     }
 }

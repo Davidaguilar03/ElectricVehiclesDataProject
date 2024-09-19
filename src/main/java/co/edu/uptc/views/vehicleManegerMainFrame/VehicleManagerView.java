@@ -38,10 +38,9 @@ public class VehicleManagerView extends JFrame implements VehicleManagerInterfac
 
     @Override
     public void begin() {
-        vehicleManagerLoadingView.begin();
-        presenter.loadData();
+        this.presenter.loadData();
+        this.vehicleManagerLoadingView.close();
         this.setVisible(true);
-        vehicleManagerLoadingView.close();
         vehicleManagerBody.loadTableData();
     }
 
@@ -68,7 +67,7 @@ public class VehicleManagerView extends JFrame implements VehicleManagerInterfac
     }
 
     private void createVehicleManagerLoadingView(){
-        vehicleManagerLoadingView = new VehicleManagerLoadingView(40);
+        vehicleManagerLoadingView = new VehicleManagerLoadingView(this,40);
     }
 
     @Override
@@ -78,6 +77,11 @@ public class VehicleManagerView extends JFrame implements VehicleManagerInterfac
 
     public VehicleManagerInterface.Presenter getPresenter() {
         return this.presenter;
+    }
+
+    @Override
+    public VehicleManagerLoadingView getVehicleManagerLoadingView(){
+        return this.vehicleManagerLoadingView;
     }
 
     public void showGeographicalAnalysisPanel() {

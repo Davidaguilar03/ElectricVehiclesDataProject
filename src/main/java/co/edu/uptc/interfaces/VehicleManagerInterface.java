@@ -7,6 +7,7 @@ import co.edu.uptc.pojos.VehiclesByManufacturer;
 import co.edu.uptc.pojos.VehiclesByModel;
 import co.edu.uptc.pojos.VehiclesByState;
 import co.edu.uptc.utilities.DoubleLinkedList;
+import co.edu.uptc.views.vehicleManagerLoadingFrame.VehicleManagerLoadingView;
 
 public interface VehicleManagerInterface {
 
@@ -34,6 +35,7 @@ public interface VehicleManagerInterface {
 
         public void begin();
 
+        public VehicleManagerLoadingView getVehicleManagerLoadingView();
     }
 
     public interface Presenter {
